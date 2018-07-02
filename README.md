@@ -5,6 +5,22 @@ style and preferences.  Most of the time that has to do with things like color s
 is that the new commands will be drop in replacements for the ones already on the system.  If I need to totally alter the functionality of the tool I will give it a new name so
 as not to clash with the old tool.
 
+In addition to my own tools, I also keep pther developer's code here.  I have stuff in here from:
+
+* [Stanley Lieber](http://plan9.stanleylieber.com/)
+* [Cinap Lenrek](http://9front.org/cinap.html)
+* [Aiju](http://aiju.de)
+
+> Some of those links may be bad or down.  ;-)
+
+**Description**
+
+Most of the color scheme change were made to match Stanley Lieber's 'mono' [patches](http://plan9.stanleylieber.com/rio/) to rio and various utilities.
+
+<img src="http://plan9.stanleylieber.com/rio/img/rio.mono.png" alt="rio.mono" width="800px"/>
+
+* clock - this is the old clock program.  I just changed the background
+
 **Usage**
 
 The easiest way to make use of the tools within this repo is to first install [9front](http://9front.org/).  The installation is surprising easily (once you know what your doing ;-) )
