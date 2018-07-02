@@ -1,0 +1,8 @@
+</$objtype/mkfile
+
+BIN=/usr/$user/bin/$objtype/bin/games
+TARG=basicwinevt
+
+OFILES=basicwinevt.$O
+
+</sys/src/cmd/mkone
