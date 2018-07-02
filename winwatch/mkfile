@@ -1,0 +1,7 @@
+</$objtype/mkfile
+BIN=/usr/$user/bin/$objtype/bin
+TARG=winwatch
+
+OFILES=winwatch.$O
+
+</sys/src/cmd/mkone
