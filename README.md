@@ -19,7 +19,7 @@ easier to modify so that it conforms to my own conventions.   I have stuff in he
 Most of the color scheme change were made to match Stanley Lieber's 'mono' [patches](http://plan9.stanleylieber.com/rio/) to rio and various utilities.  Why you may ask?  Well
 I am not a fan of staring at glaring white backgrounds all day.  That much brightness takes it's toll on your eyes after a while.   [Why you should avoid white backgrounds!](http://presentationsforbusiness.com/professional-speaker-image/white-death-on-the-podium/)
 
-[example screenshot](http://plan9.stanleylieber.com/rio/img/rio.mono.png)
+[example screenshot from Stanley Lieber](http://plan9.stanleylieber.com/rio/img/rio.mono.png)
 
 * clock - this is the old clock program.  I just changed the background to black and the clock arms to green
 * faces.b - black background (Stanley Lieber)
@@ -65,7 +65,20 @@ Also, when doing system updates, I don't have to worry about overwriting any of 
 
 So my modifications and the core system are kept separated and clean.
 
-	
+**Screenshots**
+
+***Actual Desktop Recording from within 9front***
+
+I am actually running an rc script, which is capturing whole screen snapshots using /dev/screen, as you watch this.  I then used 'resample' on all of the 'bit' files to resize them 
+from 1080p to 720p.  I then used 'togif' to convert them into an animated gif file.  To say this is inefficient is an understatement ;-)
+
+If you look closely you can see the 'stats' monitor showing the system load and it is pretty high.  But I was still able to browse using 'mothra' and open a terminal and do silly 
+stuff.
+
+My next project will be to write a more robust screen capture program which will do all of this more effectively and efficiently.
+
+![Tony's Desktop - KVM 1080p](https://shonuff.superbadmofo.com/images/9front-desktop-720p.gif)
+
 **Administration**
 
 This repository is maintained by [Tony Mendoza](mailto:tmendoza@superbadmofo.com)
