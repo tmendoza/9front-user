@@ -1,0 +1,8 @@
+</$objtype/mkfile
+
+BIN=/usr/$user/bin/$objtype/bin
+TARG=screenlock
+
+OFILES=screenlock.$O
+
+</sys/src/cmd/mkone

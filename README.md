@@ -29,6 +29,7 @@ I am not a fan of staring at glaring white backgrounds all day.  That much brigh
 * statusmsg.mono - again makes the background black and text white.  This is a cool tool if your not aware of it.  [Read the man page](http://man.cat-v.org/9front/8/statusbar). (Stanley Lieber)
 * winwatch - this is an updated version of the winwatch program.  I modified it with a black background and different highlight colors (magenta and blue)
 * basicwinevt - this is an example skeleton of a simple resizeable window which handles keyboard, mouse, timer, menu and window resize events.  Is used for simple game and windowed application projects.
+* screenlock - modified screenlock to redraw the window with a running digital clock overlaying the background image.
 
 **Usage**
 
