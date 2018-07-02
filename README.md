@@ -41,7 +41,9 @@ I am currently running 9front on QEMU/KVM on Debian 'stretch' 9.4.  I am using [
 
 Once you have 9front installed you will need to pull down this repo.  A simple clone will do:
 
->*term% hg clone https://superbadmofo@bitbucket.org/superbadmofo/9front-user*
+```
+term% hg clone https://superbadmofo@bitbucket.org/superbadmofo/9front-user
+```
 
 Then all you have to do is cd into the 9front-user directory and run 'mk install'
 
