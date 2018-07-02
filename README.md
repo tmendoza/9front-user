@@ -5,7 +5,8 @@ style and preferences.  Most of the time that has to do with things like color s
 is that the new commands will be drop in replacements for the ones already on the system.  If I need to totally alter the functionality of the tool I will give it a new name so
 as not to clash with the old tool.
 
-In addition to my own tools, I also keep pther developer's code here.  I have stuff in here from:
+In addition to my own tools, I also keep other developer's code here.  I am not trying to steal their thunder or anything like that, it's just that the things I have put here make it 
+easier to modify so that it conforms to my own conventions.   I have stuff in here from:
 
 * [Stanley Lieber](http://plan9.stanleylieber.com/)
 * [Cinap Lenrek](http://9front.org/cinap.html)
@@ -15,11 +16,19 @@ In addition to my own tools, I also keep pther developer's code here.  I have st
 
 **Description**
 
-Most of the color scheme change were made to match Stanley Lieber's 'mono' [patches](http://plan9.stanleylieber.com/rio/) to rio and various utilities.
+Most of the color scheme change were made to match Stanley Lieber's 'mono' [patches](http://plan9.stanleylieber.com/rio/) to rio and various utilities.  Why you may ask?  Well
+I am not a fan of staring at glaring white backgrounds all day.  That much brightness takes it's toll on your eyes after a while.   [Why you should avoid white backgrounds!](http://presentationsforbusiness.com/professional-speaker-image/white-death-on-the-podium/)
 
-<img src="http://plan9.stanleylieber.com/rio/img/rio.mono.png" alt="rio.mono" width="800px"/>
+[example screenshot](http://plan9.stanleylieber.com/rio/img/rio.mono.png)
 
-* clock - this is the old clock program.  I just changed the background
+* clock - this is the old clock program.  I just changed the background to black and the clock arms to green
+* faces.b - black background (Stanley Lieber)
+* mothra.black - changed the default white background to black (Stanley Lieber)
+* rio.mono - this changes the pop-up menus to a black background with white text.  It also allows for using an image as a background using the '-B' option.  Borders are gray. (Stanley Lieber)
+* stats.mono - makes the background black and changes the colors of the graphs to light-grey. (Stanley Lieber)
+* statusmsg.mono - again makes the background black and text white.  This is a cool tool if your not aware of it.  [Read the man page](http://man.cat-v.org/9front/8/statusbar). (Stanley Lieber)
+* winwatch - this is an updated version of the winwatch program.  I modified it with a black background and different highlight colors (magenta and blue)
+* basicwinevt - this is an example skeleton of a simple resizeable window which handles keyboard, mouse, timer, menu and window resize events.  Is used for simple game and windowed application projects.
 
 **Usage**
 
