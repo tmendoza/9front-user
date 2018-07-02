@@ -77,7 +77,7 @@ stuff.
 
 My next project will be to write a more robust screen capture program which will do all of this more effectively and efficiently.
 
-![Tony's Desktop - KVM 1080p](https://shonuff.superbadmofo.com/images/9front-desktop-720p.gif)
+![Tony's Desktop - KVM 1080p](http://shonuff.superbadmofo.com/images/9front-desktop-720p.gif)
 
 **Administration**
 
