@@ -1,0 +1,12 @@
+- original fonts
+- color scheme
+- removed ornamental panel borders in libpanel
+- ins/del scrolls left/right
+- left/right scrolls one line up/down
+- draw <hr>
+- mothra.h:
+	NXPROC=10,	/* # of parallel procs loading the pix */
+	NPIXMB=16,	/* megabytes of image data to keep arround */
+- add plumb menu item, to plumb selected text or link
+
+sl

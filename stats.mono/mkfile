@@ -1,0 +1,7 @@
+</$objtype/mkfile
+BIN=/usr/$user/bin/$objtype/bin
+TARG=stats
+
+OFILES=stats.$O
+
+</sys/src/cmd/mkone

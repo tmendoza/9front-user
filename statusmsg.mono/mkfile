@@ -1,0 +1,7 @@
+</$objtype/mkfile
+BIN=/usr/$user/bin/$objtype/bin/aux
+TARG=statusmsg
+
+OFILES=statusmsg.$O
+
+</sys/src/cmd/mkone

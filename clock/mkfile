@@ -1,0 +1,8 @@
+</$objtype/mkfile
+
+BIN=/usr/$user/bin/$objtype/bin
+TARG=clock
+
+OFILES=clock.$O
+
+</sys/src/cmd/mkone
