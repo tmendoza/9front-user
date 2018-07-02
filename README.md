@@ -10,13 +10,13 @@ as not to clash with the old tool.
 The easiest way to make use of the tools within this repo is to first install [9front](http://9front.org/).  The installation is surprising easily (once you know what your doing ;-) )
 I am currently running 9front on QEMU/KVM on Debian 'stretch' 9.4.  I am using [virt-manager](https://virt-manager.org/) to manage my virtual machines to make it easy on myself. 
 
->> *I have tweaked my KVM instance a bit to make it work more effectively.  One of the first things you will WANT to do is to use RAW disk partitions for KVM.  Not a lot of 
->> tutorials out there for this, but if you know LVM2 on Linux and your familiar with virt-manager it is suprisingly easy.  [Here](https://johnsontravis.wordpress.com/2016/04/29/tutorial-6-configuring-lvm-storage-for-qemukvm-vms-using-virt-manager-on-centos-7/)
->> is a decent resource for doing it with virt-manager.*
+>*I have tweaked my KVM instance a bit to make it work more effectively.  One of the first things you will WANT to do is to use RAW disk partitions for KVM.  Not a lot of 
+>tutorials out there for this, but if you know LVM2 on Linux and your familiar with virt-manager it is suprisingly easy.  [Here](https://johnsontravis.wordpress.com/2016/04/29/tutorial-6-configuring-lvm-storage-for-qemukvm-vms-using-virt-manager-on-centos-7/)
+>is a decent resource for doing it with virt-manager.*
 
 Once you have 9front installed you will need to pull down this repo.  A simple clone will do:
 
->>>*term% hg clone https://superbadmofo@bitbucket.org/superbadmofo/9front-user*
+>*term% hg clone https://superbadmofo@bitbucket.org/superbadmofo/9front-user*
 
 Then all you have to do is cd into the 9front-user directory and run 'mk install'
 
