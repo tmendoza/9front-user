@@ -30,7 +30,7 @@ I am not a fan of staring at glaring white backgrounds all day.  That much brigh
 * winwatch - this is an updated version of the winwatch program.  I modified it with a black background and different highlight colors (magenta and blue)
 * basicwinevt - this is an example skeleton of a simple resizeable window which handles keyboard, mouse, timer, menu and window resize events.  Is used for simple game and windowed application projects.
 * screenlock - modified screenlock to redraw the window with a running digital clock overlaying the background image.
-* 9pintro - These are most of the source listings for the example code from Francisco J. Ballesteros online PDF - [Introduction to Operating Systems Abstractions Using Plan9](http://lsub.org/who/nemo/9.intro.pdf).  If you are new to Plan9 and want to get a great overall introduction to Plan9 this is probably the best online resource available.  Not only does it introduce you to the unique features and foundational ideas of Plan9, but it also walks you thru how to program on Plan9.  VERY GOOD!
+* 9pintro - These are most of the source listings for the example code from Francisco J. Ballesteros online PDF - [Introduction to Operating Systems Abstractions Using Plan9](http://lsub.org/who/nemo/9.intro.pdf).  If you are new to Plan9 and want to get a great overall introduction to this amazing operating system, this is probably the best online resource available.  Not only does it introduce you to the unique features and concepts of Plan9, but it also walks you thru how to program on Plan9.  VERY GOOD!
 
 **Usage**
 
