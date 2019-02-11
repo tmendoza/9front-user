@@ -1,0 +1,25 @@
+</$objtype/mkfile
+
+CFLAGS=-FTVw
+
+TARG=\
+		aecho \
+		bcp \
+		biocat \
+		boom \
+		echo \
+		env \
+		err \
+		take \
+
+CFILES=\
+		aecho.c \
+		bcp.c \
+		biocat.c \
+		boom.c \
+		echo.c \
+		env.c \
+		err.c \
+		take.c \
+
+</sys/src/cmd/mkmany
