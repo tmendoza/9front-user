@@ -12,6 +12,9 @@ TARG=\
 		err \
 		take \
 		runls \
+		pnote \
+		srvecho \
+		srvforkecho
 
 CFILES=\
 		aecho.c \
@@ -23,5 +26,9 @@ CFILES=\
 		err.c \
 		take.c \
 		runls.c \
+		pnote.c \
+		srvecho.c \
+		srvforkecho.c 
+
 
 </sys/src/cmd/mkmany
