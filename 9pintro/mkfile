@@ -11,6 +11,7 @@ TARG=\
 		env \
 		err \
 		take \
+		runls \
 
 CFILES=\
 		aecho.c \
@@ -21,5 +22,6 @@ CFILES=\
 		env.c \
 		err.c \
 		take.c \
+		runls.c \
 
 </sys/src/cmd/mkmany
