@@ -8,12 +8,37 @@ This is just a bunch of notes for configuring various things within Plan9
 
 ## Desktop Configuration
 
+### Display Settings
+
+### Get a listing of VGA screen sizes
+
+```
+@{rfork n; aux/realemu; aux/vga -p}
+```
+
+### Resize the screen size (resolution)
+
+```
+@{rfork n; aux/realemu; aux/vga -m -l 1280x1024x32}
+```
+
 ### Setup my default font
 
 Add the following to your $home/lib/profile
 
 ```
 font=/lib/font/bit/fixed/unicode.9x15.font
+```
+
+### Setup some default rio windows at login
+
+```
+#!/bin/rc
+window 0,0,161,117 stats -lmisce
+window -r 32 130 1236 994
+window -r 83 54 1273 948 'acme -l $home/acme.dump'
+window -r 3 772 578 1023 'cat /dev/kprint'
+window -r 3 241 105 643 winwatch
 ```
 
 ### Set rio's window/terminal background to black
