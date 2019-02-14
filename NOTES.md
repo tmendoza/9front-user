@@ -6,8 +6,9 @@ This is just a bunch of notes for configuring various things within Plan9
 * [Cinap Lenrek](http://9front.org/cinap.html)
 * [Aiju](http://aiju.de)
 
-** Networking Configuration **
+## Networking Configuration 
 
+### Networking Startup
 Add the following to your $home/lib/profile
 
 ```
@@ -15,13 +16,14 @@ ip/ipconfig
 ndb/cs
 ndb/dns
 ```
+### Networking Commands
 
-## To list the networking configuration
+#### To list the networking configuration
 ```
 % cat /net/ndb
 ```
 
-** HTTP Proxy Configuration **
+### HTTP Proxy Configuration 
 
 Pretty much all of the tools that access the web using HTTP go thru [webfs](http://man.9front.org/4/webfs).  If your working for a company not smart enough to be using [Plan9](https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs) and their systems are not secure enough to exist out on the internet by themselves, then your probably behind some type of firewall.  Assuming that they have setup a proxy for use of those other inferior operating systems you can make use of said proxy.  You will need to do the following:
 
