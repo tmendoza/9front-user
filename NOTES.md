@@ -1,10 +1,26 @@
-##Introduction
+## Introduction
 
 This is just a bunch of notes for configuring various things within Plan9
 
 * [Stanley Lieber](http://plan9.stanleylieber.com/)
 * [Cinap Lenrek](http://9front.org/cinap.html)
 * [Aiju](http://aiju.de)
+
+## Desktop Configuration
+
+### Setup my default font
+
+Add the following to your $home/lib/profile
+
+```
+font=/lib/font/bit/fixed/unicode.9x15.font
+```
+
+### Set rio's window/terminal background to black
+
+```
+rio -b -s -i riostart
+```
 
 ## Networking Configuration 
 
