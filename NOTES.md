@@ -64,6 +64,69 @@ ndb/dns
 % cat /net/ndb
 ```
 
+### SSH Setup
+First you will need to generate an SSH private key
+
+```
+mkdir -p $home/lib/ssh
+auth/rsagen -t 'service=ssh' > $home/lib/ssh/rsa-private.key
+auth/rsa2ssh $home/lib/ssh/rsa-public.key
+cat $home/lib/ssh/rsa-private.key >/mnt/factotum/ctl
+```
+
+Now that your newly generated public/private key pair has been generated and added to factotum, you will need to configure the
+remote hosts to accept you public key (replace 'unix' with a proper IP or hostname)
+
+```
+cat $home/lib/ssh/rsa-public.key | ssh unix 'cat >> ~/.ssh/authorized_keys'
+ssh unix
+
+```
+
+### GitHub access using native 'git' command line tools
+First, you must have SSH configured properly on your Plan9/9front desktop.  You can clone Ori Bernstein's git9 cli client as 
+follows
+
+```
+hg clone https://bitbucket.org/oridb/git9
+```
+
+You should be able to 'cd' into the cloned repo dir and run
+
+```
+mk install
+```
+
+This will install the binaries in /bin/git/
+
+Examples
+--------
+
+Some usage examples:
+
+	git/clone git://git.eigenstate.org/ori/mc.git
+	git/log
+	cd subdir/name
+	git/add foo.c
+	diff bar.c /mnt/git/HEAD/
+	git/commit
+	git/push
+
+Some suggestions:
+
+* Use git+ssh style URLs if you want to be able to push to you git repo.  For example:
+
+```
+term% git/clone git+ssh://git@github.com:tmendoza/9front-user
+```
+
+Is the command format you will want to use when clone your repo.  This, of course, assumes you have SSH setup properly on your end
+and that your public key has been uploaded to your github repo account.
+
+Using this GitHub URL format will allow you to properly push changes up to your repo.
+
+I Can't tell you how awesome this is.  ;-)
+
 ### HTTP Proxy Configuration 
 
 Pretty much all of the tools that access the web using HTTP go thru [webfs](http://man.9front.org/4/webfs).  If your working for a company not smart enough to be using [Plan9](https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs) and their systems are not secure enough to exist out on the internet by themselves, then your probably behind some type of firewall.  Assuming that they have setup a proxy for use of those other inferior operating systems you can make use of said proxy.  You will need to do the following:
