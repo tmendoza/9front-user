@@ -1,0 +1,50 @@
+</$objtype/mkfile
+
+BIN=.
+TARG=`{ls *.[cy] | sed '/\.tab\.c$/d;s/..$//'}
+PROGS=${TARG:%=$O.%}
+LDFLAGS=
+YFLAGS=-d
+
+all:V:	$PROGS
+
+^([$OS])\.(.*):R:	\2.\1
+	$stem1^l $LDFLAGS -o $target $stem2.$stem1
+
+.*\.[$OS]:R:	$HFILES
+
+(.*)\.([$OS])'$':R:	\1.c
+	$stem2^c $CFLAGS $stem1.c
+
+&:n:	$O.&
+	mv $O.$stem $stem
+
+%.tab.h %.tab.c:D:	%.y
+	$YACC $YFLAGS -s $stem $prereq
+^([$OS])\.(.*):R:	\2.\1
+	$stem1^l $LDFLAGS -o $target $stem2.$stem1
+
+.*\.[$OS]:R:	$HFILES
+
+(.*)\.([$OS])'$':R:	\1.c
+	$stem2^c $CFLAGS $stem1.c
+
+&:n:	$O.&
+	mv $O.$stem $stem
+
+%.tab.h %.tab.c:D:	%.y
+	$YACC $YFLAGS -s $stem $prereq
+
+install:V:
+	for (i in $TARG)
+		mk $MKFLAGS $i.install
+
+%.install:V:	$BIN/%
+
+$BIN/%:	$O.%
+	cp $O.$stem $BIN/$stem
+
+clean:V:	cleanfiles
+
+cleanfiles:V:
+	rm -f [$OS].out *.[$OS] y.tab.? y.debug y.output [$OS].$TARG [$OS].units.tab $TARG bc.c bc.tab.h units.tab.h units.c mpc.c mpc.tab.h [$OS]._cp
