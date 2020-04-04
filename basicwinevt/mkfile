@@ -1,6 +1,6 @@
 </$objtype/mkfile
 
-BIN=/usr/$user/bin/$objtype/bin/games
+BIN=/usr/$user/bin/$objtype
 TARG=basicwinevt
 
 OFILES=basicwinevt.$O

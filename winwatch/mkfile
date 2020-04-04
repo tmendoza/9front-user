@@ -1,5 +1,5 @@
 </$objtype/mkfile
-BIN=/usr/$user/bin/$objtype/bin
+BIN=/usr/$user/bin/$objtype
 TARG=winwatch
 
 OFILES=winwatch.$O

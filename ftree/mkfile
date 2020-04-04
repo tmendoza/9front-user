@@ -1,8 +1,8 @@
 </$objtype/mkfile
 
 BIN=/usr/$user/bin/$objtype
-TARG=clock
+TARG=ftree
 
-OFILES=clock.$O
+OFILES=ftree.$O
 
 </sys/src/cmd/mkone

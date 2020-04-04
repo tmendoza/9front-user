@@ -1,5 +1,5 @@
 </$objtype/mkfile
-BIN=/usr/$user/bin/$objtype/bin/aux
+BIN=/usr/$user/bin/$objtype
 TARG=statusmsg
 
 OFILES=statusmsg.$O

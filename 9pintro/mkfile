@@ -1,6 +1,7 @@
 </$objtype/mkfile
 
 CFLAGS=-FTVw
+BIN=/usr/$user/bin/$objtype
 
 TARG=\
 		aecho \
@@ -11,10 +12,7 @@ TARG=\
 		env \
 		err \
 		take \
-		runls \
-		pnote \
-		srvecho \
-		srvforkecho
+		srvecho
 
 CFILES=\
 		aecho.c \
@@ -25,10 +23,7 @@ CFILES=\
 		env.c \
 		err.c \
 		take.c \
-		runls.c \
-		pnote.c \
-		srvecho.c \
-		srvforkecho.c 
+		srvecho.c
 
 
 </sys/src/cmd/mkmany
