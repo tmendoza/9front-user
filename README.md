@@ -51,13 +51,11 @@ Then all you have to do is cd into the 9front-user directory and run 'mk install
 
 Note: I will have to writeup my rational in more detail at a later date, but my 'mkfile' has been developed on some basic assumptions:
 
-1. You have the following directories:
-	* $home/bin/$objtype/bin
-	* $home/bin/$objtype/bin/aux
-	* $home/bin/$objtype/bin/games
-	* $home/bin/$objtype/lib
-	* $home/bin/$objtype/include
-2. You are binding $home/bin/$objtype/bin BEFORE /$objtype/bin in your profile
+1. You have the following directory:
+	* $home/bin/$cputype
+
+2. You are binding $home/bin/$objtype/bin AFTER /bin somewhere in your /usr/$user/lib/profile
+	* bind -a $home/bin/$cputype /bin
 
 I do this because I don't like to clobber the system wide binaries in '/bin'.  I like keeping things separate and clean and making use of 9front (Plan9) namespace modification
 facilities to build up the environment I need on a per-user basis.  
