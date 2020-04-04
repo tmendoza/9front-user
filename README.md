@@ -54,7 +54,7 @@ Note: I will have to writeup my rational in more detail at a later date, but my 
 1. You have the following directory:
 	* $home/bin/$cputype
 
-2. You are binding $home/bin/$objtype/bin AFTER /bin somewhere in your /usr/$user/lib/profile
+2. You are binding $home/bin/$cputype AFTER /bin somewhere in your /usr/$user/lib/profile
 	* bind -a $home/bin/$cputype /bin
 
 I do this because I don't like to clobber the system wide binaries in '/bin'.  I like keeping things separate and clean and making use of 9front (Plan9) namespace modification
@@ -77,6 +77,8 @@ stuff.
 My next project will be to write a more robust screen capture program which will do all of this more effectively and efficiently.
 
 ![Tony's Desktop - KVM 1080p](http://shonuff.superbadmofo.com/images/9front-desktop-720p.gif)
+
+Note:  I know mainly use drawterm from one of my Apple macOS laptops.  Next thing is to add audio to drawterm.
 
 **Administration**
 
