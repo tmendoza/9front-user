@@ -1,0 +1,20 @@
+</$objtype/mkfile
+
+BIN=/usr/$user/bin/$objtype
+TARG=todoist
+
+OFILES=main.$O \
+	dict.$O \
+	olist.$O \
+	util.$O \
+
+HFILES=dict.h \
+	olist.h \
+	util.h \
+
+UPDATE=\
+	mkfile\
+	$HFILES\
+	${OFILES:%.$O=%.c}\
+
+</sys/src/cmd/mkone
