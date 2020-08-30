@@ -1,0 +1,8 @@
+</$objtype/mkfile
+
+BIN=.
+TARG=guiappthread
+
+OFILES=apptemplate-threaded.$O
+
+</sys/src/cmd/mkone
