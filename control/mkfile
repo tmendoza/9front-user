@@ -1,0 +1,8 @@
+</$objtype/mkfile
+
+BIN=.
+TARG=control
+
+OFILES=control.$O
+
+</sys/src/cmd/mkone
